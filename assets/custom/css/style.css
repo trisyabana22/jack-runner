@@ -217,13 +217,15 @@ ul.menus li a {
   padding-top: 1rem;
 }
 
-.card-jack-menu {
-  background-size: 100%;
+/* .card-jack-menu {
+  background-size: contain;
   background-repeat: no-repeat;
-  min-height: 200px;
+  background-position: center;
+  min-height: 300px;
   max-height: 400px;
   margin-bottom: 1.5rem;
-}
+  position: relative;
+} */
 
 .card-jack-menu::before {
   content: "";
@@ -232,7 +234,7 @@ ul.menus li a {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Ubah nilai alpha (0.5) sesuai keinginan Anda */
+  background-color: rgba(87, 85, 85, 0.3);
 }
 
 .title-card-jack {
@@ -308,6 +310,11 @@ ul.menu-geser-list > li {
 
   .text-copyright {
     text-align: left;
+    font-size: 0.8rem;
+  }
+  .menu-footer-parent {
+    align-items: center;
+    /* justify-content: ; */
   }
 }
 
@@ -355,7 +362,7 @@ ul.menu-geser-list > li {
   }
   .icon-cart-header {
     order: 4;
-    justify-content: start;
+    justify-content: end;
   }
 
   .menus-hover {
@@ -391,7 +398,7 @@ ul.menu-geser-list > li {
     display: block;
   }
   .icon-truck-header {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .menu-geser {
     position: static;
@@ -434,7 +441,7 @@ ul.menu-geser-list > li {
   }
 
   .card-jack-menu {
-    min-height: 400px;
+    min-height: 450px !important;
     margin-bottom: 1.5rem;
   }
 
