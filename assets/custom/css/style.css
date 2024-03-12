@@ -1,0 +1,475 @@
+@font-face {
+  font-family: Futura PT;
+  src: url(../fonts/FuturaPT-Medium.eot);
+  src: url(../fonts/FuturaPT-Mediumd41d.eot?#iefix) format("embedded-opentype"), url(../fonts/FuturaPT-Medium.woff2) format("woff2"), url(../fonts/FuturaPT-Medium.woff) format("woff"), url(../fonts/FuturaPT-Medium.ttf) format("truetype"), url(../fonts/FuturaPT-Medium.svg#FuturaPT-Medium) format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Futura PT;
+  src: url(../fonts/FuturaPT-Demi.eot);
+  src: url(../fonts/FuturaPT-Demid41d.eot?#iefix) format("embedded-opentype"), url(../fonts/FuturaPT-Demi.woff2) format("woff2"), url(../fonts/FuturaPT-Demi.woff) format("woff"), url(../fonts/FuturaPT-Demi.ttf) format("truetype"), url(../fonts/FuturaPT-Demi.svg#FuturaPT-Demi) format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Futura;
+  src: url(../fonts/FuturaBT-Medium.eot);
+  src: url(../fonts/FuturaBT-Mediumd41d.eot?#iefix) format("embedded-opentype"), url(../fonts/FuturaBT-Medium.woff2) format("woff2"), url(../fonts/FuturaBT-Medium.woff) format("woff"), url(../fonts/FuturaBT-Medium.ttf) format("truetype"), url(../fonts/FuturaBT-Medium.svg#FuturaBT-Medium) format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-size-heading-large: 1.9921875rem;
+  --font-size-heading-medium: 1.7578125rem;
+  --font-size-heading-1: 1.640625rem;
+  --font-size-heading-2: 1.5234375rem;
+  --font-size-heading-3: 1.40625rem;
+  --font-size-heading-4: 1.171875rem;
+  --font-size-heading-5: 1.0546875rem;
+  --font-size-heading-6: 1.0546875rem;
+  --font-size-body-larger: 1.2890625rem;
+  --font-size-body-large: 1.171875rem;
+  --font-size-body-medium: 1.0546875rem;
+  --font-size-body: 0.9375rem;
+  --font-size-body-small: 0.87890625rem;
+  --font-size-body-smaller: 0.8203125rem;
+  --font-size-body-smallest: 0.76171875rem;
+  --font-size-body-tiny: 0.703125rem;
+  --font-size-button-small: 0.8203125rem;
+  --font-size-button-medium: 0.9375rem;
+  --font-size-button-large: 1.0546875rem;
+  --font-size-button-x-large: 1.23046875rem;
+  --font-size-menu-large: 0.99609375rem;
+  --font-size-menu: 0.9375rem;
+  --font-size-input: 0.9375rem;
+  --font-size-section-heading: 1.171875rem;
+  --font-size-menu-body-medium: 1.0546875rem;
+  --font-size-menu-body-small: 0.87890625rem;
+  --font-size-heading-body-small: 0.87890625rem;
+  --font-size-heading-body-smaller: 0.8203125rem;
+  --font-size-heading-slideshow: 1.9921875rem;
+}
+
+@media screen and (max-width: 719px) {
+  :root {
+    --font-size-heading-large: 1.9921875rem;
+  }
+}
+
+@media screen and (max-width: 859px) {
+  :root {
+    --font-size-heading-medium: 1.7578125rem;
+    --font-size-heading-1: 1.640625rem;
+    --font-size-heading-2: 1.5234375rem;
+    --font-size-heading-3: 1.40625rem;
+    --font-size-heading-4: 1.171875rem;
+    --font-size-heading-5: 1.0546875rem;
+    --font-size-heading-6: 1.0546875rem;
+    --font-size-body-larger: 1.2890625rem;
+    --font-size-body-large: 1.171875rem;
+    --font-size-body-medium: 1.0546875rem;
+    --font-size-body: 0.9375rem;
+    --font-size-body-small: 0.87890625rem;
+    --font-size-body-smaller: 0.8203125rem;
+    --font-size-body-smallest: 0.76171875rem;
+    --font-size-body-tiny: 0.703125rem;
+    --font-size-button-small: 0.8203125rem;
+    --font-size-button-medium: 0.875rem;
+    --font-size-button-large: 0.9921875rem;
+    --font-size-button-x-large: 1.16796875rem;
+    --font-size-menu-large: 0.93359375rem;
+    --font-size-menu: 0.9375rem;
+    --font-size-input: 0.9375rem;
+    --font-size-section-heading: 1.171875rem;
+    --font-size-menu-body-medium: 1.0546875rem;
+    --font-size-menu-body-small: 0.87890625rem;
+    --font-size-heading-body-small: 0.87890625rem;
+    --font-size-heading-body-smaller: 0.8203125rem;
+    --font-size-heading-slideshow: 1.9921875rem;
+  }
+}
+
+.text-dark-default {
+  color: #484848;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  position: fixed;
+  z-index: 999;
+  background-color: white;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 1px 4px #80808040;
+}
+
+.scroll-locked body {
+  overflow: hidden;
+  touch-action: manipulation;
+}
+
+.bg-darke {
+  background-color: #1e1b1b !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.announcement-bar {
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--font-size-body-smaller);
+  position: relative;
+  display: block;
+  padding: 15px 0;
+  line-height: 1.3;
+  color: #484848;
+  text-align: center;
+  text-decoration: none;
+}
+.header-sub {
+  align-items: center;
+}
+
+.icon-list {
+  display: inline-block;
+  font-size: 2rem;
+  color: #484848;
+}
+
+.list-menu-footer-ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+ul > .item-listmenu-footer {
+  list-style-type: none;
+}
+
+.item-listmenu-footer-link {
+  color: #484848 !important;
+  text-decoration: none;
+  font-size: 0.7rem;
+}
+
+.item-listmenu-footer:not(:last-child) {
+  padding: 0px;
+  padding-right: 11px;
+  margin-right: 10px;
+  border-right: 1px solid rgba(104, 104, 104, 0.5);
+}
+
+ul.menus {
+  list-style: none;
+  padding-left: 0.2rem;
+}
+
+ul.menus li a {
+  text-decoration: none;
+  color: #1e1b1b;
+}
+
+.shop-menu {
+  padding-left: 0.2rem !important;
+}
+
+.menu-geser {
+  width: 85%;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  transition: all 0.5s ease;
+  transform: translate(-100%); /*komentarin*/
+}
+
+.login-menu-header {
+  order: 4;
+}
+
+/* .menu-geser:hover {
+  transform: translate(-400px);
+} */
+
+.icon-cart-header {
+  display: flex;
+  justify-content: end;
+  color: #484848;
+}
+
+.menu-geser-list-parent {
+  padding-top: 1rem;
+}
+
+.card-jack-menu {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  max-height: 400px;
+  margin-bottom: 1.5rem;
+}
+
+.card-jack-menu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Ubah nilai alpha (0.5) sesuai keinginan Anda */
+}
+
+.title-card-jack {
+  position: relative;
+  z-index: 1;
+}
+
+.text-copyright {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.list-menu-footer-parent {
+  margin-top: 1.5rem;
+}
+
+ul.menu-geser-list > li {
+  margin-top: 1rem;
+  list-style: none;
+}
+
+.sub-menu {
+  margin-top: 0.5rem;
+}
+
+.overlay-jack {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: none; /* Warna latar belakang overlay */
+  z-index: 1; /* Letakkan di atas gambar */
+  pointer-events: none;
+}
+
+@media (min-width: 576px) {
+  .list-menu {
+    display: block;
+    order: 1;
+  }
+  .logo-header {
+    order: 2;
+  }
+  .inputan-search-header {
+    order: 3;
+  }
+  .icon-cart-header {
+    order: 4;
+    justify-content: start;
+  }
+  .free-shipping-header {
+    order: 5;
+  }
+
+  .line-bottom {
+    display: none;
+  }
+
+  .dropdown-ico {
+    display: none;
+  }
+
+  .icon-menu-footer {
+    order: 2;
+    justify-content: end;
+  }
+
+  .list-menu-footer-ul {
+    justify-content: start;
+  }
+
+  .text-copyright {
+    text-align: left;
+  }
+}
+
+/* @media (min-width: 768px) {
+  .list-menu {
+    display: block;
+    order: 1;
+  }
+  .logo-header {
+    order: 2;
+  }
+  .inputan-search-header {
+    order: 3;
+  }
+  .icon-cart-header {
+    order: 4;
+    justify-content: start;
+  }
+  .free-shipping-header {
+    order: 5;
+  }
+} */
+
+@media screen and (min-width: 992px) {
+  .announcement-bar {
+    font-size: var(--font-size-body-small);
+  }
+  .header-sub {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  ul.menu-geser-list > li {
+    margin-top: 0;
+  }
+
+  .list-menu {
+    display: none;
+  }
+  .logo-header {
+    order: 1;
+  }
+  .inputan-search-header {
+    order: 2;
+  }
+  .icon-cart-header {
+    order: 4;
+    justify-content: start;
+  }
+
+  .menus-hover {
+    /* display: block; */
+    position: absolute;
+    /* z-index: 702; */
+    width: 240px;
+    /* padding-top: 15px; */
+    padding-bottom: 15px;
+    background-color: #fff;
+    box-shadow: 0 3px 4px #80808040;
+  }
+
+  .sub-menu {
+    margin-top: 0.7rem;
+  }
+
+  ul.menus li a {
+    /* border: 1px solid black; */
+    display: block;
+  }
+
+  .free-shipping-header {
+    order: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left !important;
+    gap: 10px;
+  }
+
+  .free-shipping-header small span {
+    display: block;
+  }
+  .icon-truck-header {
+    font-size: 2rem;
+  }
+  .menu-geser {
+    position: static;
+    background-color: white;
+    transform: translate(0);
+    width: 100%;
+  }
+  .menu-geser-list-parent {
+    padding-top: 0;
+  }
+  .menu-geser-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .x-close {
+    display: none;
+  }
+  .card-product-jack {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  .card-jack-parent {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+
+  .menu-footer-product {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .card-jack-content {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 99;
+  }
+
+  .card-jack-menu {
+    min-height: 400px;
+    margin-bottom: 1.5rem;
+  }
+
+  /* .collapse {
+    display: block !important;
+  } */
+
+  .menu-footer-parent {
+    align-items: center;
+    /* justify-content: ; */
+  }
+
+  .list-menu-footer-parent {
+    order: 1;
+    text-align: left;
+    margin-top: 1rem;
+  }
+
+  .text-copyright {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .overlay-jack {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(121, 121, 121, 0.5); /* Warna latar belakang overlay */
+    z-index: 1; /* Letakkan di atas gambar */
+    pointer-events: none;
+  }
+
+  .shop-menu {
+    padding-left: 1rem !important;
+  }
+}
